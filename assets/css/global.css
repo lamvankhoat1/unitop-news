@@ -1,8 +1,8 @@
 :root {
     --green-color: #01a050;
-    --gray-text: #3f3f3f;
-    --white-text: #fefefe;
-    --black-text: #000;
+    --gray-color: #3f3f3f;
+    --white-color: #fefefe;
+    --black-color: #000;
     --width-news-1: 488px;
     --width-news-2: 341px;
     --width-news-3: 341px;
@@ -13,6 +13,7 @@
 body {
     font-family: 'Open Sans', sans-serif;
     font-family: 'Roboto', sans-serif;
+    line-height: 1.25;
 }
 
 .container {
@@ -23,6 +24,10 @@ body {
 /* layout */
 .d-flex {
     display: flex;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
 }
 
 /* reset ul */
@@ -52,5 +57,56 @@ ul {
 }
 
 .text-black {
-    color: var(--black-text);
+    color: var(--black-color);
 }
+
+/* position */
+.position-relative {
+    position: relative;
+}
+
+.position-absolute {
+    position: absolute;
+}
+
+/* other news */
+ul.other-news li {
+    display: flex;
+    margin-bottom: 20px;
+}
+ul.other-news li a:first-child {
+    padding-right: 11px;
+    display: block;
+}
+
+ul.other-news li a:last-child {
+    font-size: 14px;
+    color: var(--black-color);
+    font-weight: 500;
+    padding-left: 11px;
+    text-decoration: none;
+}
+
+ul.other-news li:hover a:last-child {
+    color: var(--green-color);
+}
+
+/* box */
+
+.box .box-head {
+    border-bottom: 1px solid var(--green-color);
+    margin-bottom: 25px;
+} 
+.box .box-head h3 {
+    color: var(--white-color);
+    background-color: var(--green-color);
+    display: inline-block;
+    font-size: 18px;
+    margin: 0;
+    padding: 11.5px 21.5px;
+}
+
+.box .box-body {
+    margin-bottom: 40px;
+}
+

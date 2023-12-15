@@ -1,0 +1,142 @@
+body {
+    --width-news-1: 420px;
+    --width-news-2: 394px;
+    --width-news-left: 829px;
+    --padding-news-1: 15px;
+    --padding-news-2: 19px;
+}
+
+header {
+    border-bottom: none;
+}
+#breadcrumb {
+    background-color: #f3f3f3;
+    border-top:  1px solid #d8d8d8;
+}
+
+ul.breadcrumb li {
+    display: inline-block;
+}
+
+ul.breadcrumb li a {
+    font-size: 11px;
+    color: #565656;
+    display: inline-block;
+    padding: 8.5px 0;
+}
+
+
+ul.breadcrumb li:first-child a {
+    font-weight: 500;
+    color: var(--black-color);
+}
+
+ul.breadcrumb li:hover a {
+    color: var(--green-color);
+    text-decoration: none;
+} 
+
+ul.breadcrumb li + li::before {
+    font-family: fontawesome;
+    content: "\f105";
+    color: #565656;
+    padding-right: 7px;
+    padding-left: 11px;
+}
+
+/* -------------------- */
+.width-news-col-2 a.main-news h2 {
+    font-size: 24px;
+    color: var(--black-color);
+    padding-bottom: 10px;
+}
+
+.width-news-col-2 p {
+    font-size: 15px;
+    color: var(--gray-color);
+    padding-top: 10px;
+    text-align: justify;
+}
+
+#main-news-list {
+    margin-top: 30px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid var(--green-color);
+}
+
+#main-news-list-detail {
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+
+#main-news-list-detail ul li {
+    margin-bottom: 36px;
+}
+
+#main-news-list-detail ul li:last-child {
+    margin-bottom: 0;
+}
+
+#main-news-list-detail ul.news-list li a.thumb-image {
+    width: 262px;
+    padding-right: 7px;
+}
+
+#main-news-list-detail ul.news-list li .news-title h2{
+    color: var(--black-color);
+    font-size: 20px;
+    font-weight: 500;
+    padding-top: 0;
+    margin-bottom: 15px;
+}
+
+#main-news-list-detail ul.news-list .news-title {
+    text-decoration: none;
+}
+
+#main-news-list-detail ul.news-list .news-title:hover h2 {
+    color: var(--green-color);
+}
+#main-news-list-detail ul.news-list li .details-news {
+    padding-left: 7px;
+}
+
+#main-news-list-detail ul.news-list li .details-news .public-date{
+    font-size: 12px;
+    color: #959595;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+#main-news-list-detail ul.news-list li .details-news p.excerp {
+    font-size: 14px;
+    color: #464646;
+    text-align: justify;
+}
+
+#pagination {
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+#pagination button {
+    /* h: 36px */
+    outline: none;
+    display: inline-block;
+    border: 1px solid #dedede;
+    font-size: 13px;
+    text-align: center;
+    width: 36px;
+    height: 36px;
+    margin: 0 3.5px;
+    background-color: #fff;
+}
+
+#pagination button:hover {
+    border: 1px solid var(--green-color);
+}
+
+#pagination button.active {
+    background-color: #019f4f;
+    color: white;
+}
